@@ -11,4 +11,23 @@
     <!-- passing value from parent to child in one way is done using function -->
     <button (click)="showPassedValue('Anil')">Show Passed Value</button>
   </div>
+
+  <!-- 2️⃣ Two-Way Binding =Done using [(ngModel)] and we need to import FormsModule, this is used where user only for user input -->
+  <div class="card">
+    <h2>Two-Way Binding</h2>
+    <input [(ngModel)]="userInput" placeholder="Type here" />
+    <p>You typed: {{ userInput }}</p>
+    <select [(ngModel)]="selectedOption">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+
+  <!-- 3️⃣ Event Binding -->
+  <!-- <div class="card">
+    <h2>Event Binding</h2>
+    <button (click)="increment()">Click Me</button>
+    <p>Button clicked: {{ count }} times</p>
+  </div> -->
 </div>
