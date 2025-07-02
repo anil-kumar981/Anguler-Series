@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -17,4 +17,9 @@ export class Emp {
   //Two way binding
   userInput: string = '';
   selectedOption: string = '1';
+  //Single Event Binding
+  count = signal<number>(0); //
+  increment() {
+    this.count.set(this.count() + 1);
+  }
 }
