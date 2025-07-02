@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Angular Data Binding Examples</h1>
+
+  <!-- 1️⃣ One-Way Data Binding -->
+  <div class="card">
+    <h2>One-Way Binding</h2>
+    <p>Welcome, {{ userName }}</p>
+    <input type="text" value="{{userName}}" />
+    <img [src]="imageUrl" width="100" />
+    <!-- when we use like this src="{{imageUrl}}" this static Binding , but if we use like this [src]="imageUrl" this Dynamic Binding -->
+    <!-- passing value from parent to child in one way is done using function -->
+    <button (click)="showPassedValue('Anil')">Show Passed Value</button>
+  </div>
+</div>
