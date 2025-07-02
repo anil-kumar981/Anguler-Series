@@ -5,16 +5,17 @@
   <section class="card">
     <h2>*ngIf</h2>
     <button (click)="showText = !showText">Toggle Text</button>
+    <!-- here is implementation -->
     <p *ngIf="showText">Now you see me!</p>
   </section>
 
   <!-- *ngFor example -->
-  <!-- <section class="card">
+  <section class="card">
     <h2>*ngFor</h2>
     <ul>
-      <li *ngFor="let name of names">{{ name }}</li>
+      <li *ngFor="let val of name">{{ val }}</li>
     </ul>
-  </section> -->
+  </section>
 
   <!-- *ngSwitch example -->
   <!-- <section class="card">

@@ -9,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class StructuralDirectives {
   showText: boolean = true;
+  name: string[] = [
+    'Anil',
+    'Anand',
+    'raj',
+    'Anand',
+    'Anil',
+    'Anand',
+    'Anil',
+    'Anand',
+    'Anil',
+    'Anand',
+  ];
 }
