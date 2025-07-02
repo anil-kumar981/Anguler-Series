@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Angular Structural Directives</h1>
+
+  <!-- *ngIf example -->
+  <section class="card">
+    <h2>*ngIf</h2>
+    <button (click)="showText = !showText">Toggle Text</button>
+    <p *ngIf="showText">Now you see me!</p>
+  </section>
+
+  <!-- *ngFor example -->
+  <!-- <section class="card">
+    <h2>*ngFor</h2>
+    <ul>
+      <li *ngFor="let name of names">{{ name }}</li>
+    </ul>
+  </section> -->
+
+  <!-- *ngSwitch example -->
+  <!-- <section class="card">
+    <h2>*ngSwitch</h2>
+    <select [(ngModel)]="selectedColor">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+    </select>
+
+    <div [ngSwitch]="selectedColor">
+      <p *ngSwitchCase="'red'" style="color: red">You picked Red</p>
+      <p *ngSwitchCase="'green'" style="color: green">You picked Green</p>
+      <p *ngSwitchCase="'blue'" style="color: blue">You picked Blue</p>
+      <p *ngSwitchDefault>Please pick a color</p>
+    </div>
+  </section> -->
+</div>
